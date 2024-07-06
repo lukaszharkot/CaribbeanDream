@@ -36,9 +36,8 @@
 .video-button {
   width: 140px;
   height: 35px;
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 5px;
-  color: #4E4B5C;
   background: transparent;
   border: solid;
   border-color: rgb(218, 218, 218, 0.9);
@@ -46,6 +45,12 @@
   position: absolute;
   left: 7%;
   bottom: 12%;
+  transition-duration: 0.4s;
+}
+.video-button:hover{
+  color: rgb(190, 190, 190, 0.9);
+  border-color: rgb(180, 180, 180, 0.9);
+  background-color: rgb(218, 218, 218, 0.15);;
 }
 
 .big-logo-container{
@@ -167,11 +172,16 @@
 .gallery-button{
   width: 140px;
   height: 35px;
-  font-size: 14px;
-  background-color: transparent;
+  font-size: 16px;
   border-radius: 5px;
-  color: #4E4B5C;
-  border-color: #4E4B5C;
+  background: transparent;
+  border: solid 2px;
+  color: rgb(78, 75, 92);
+  border-color: rgb(78, 75, 92);
+  transition-duration: 0.4s;
+}.gallery-button:hover{
+  color: rgb(78, 75, 92, 0.8);
+  border-color: rgb(78, 75, 92, 0.7);
 }
 
 .button-div{
@@ -206,7 +216,7 @@
   font-weight: 300;
   line-height: normal;
   margin-top: 120px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .kata-container{
@@ -230,7 +240,7 @@
   justify-content: center;
   width: 100%;
   height: 50px;
-  color: #4E4B5C;
+  color: #323038;
   text-overflow: ellipsis;
   white-space: normal;
   overflow: hidden;
@@ -251,7 +261,7 @@
   max-width: 80%;
   justify-content: center;
   margin-top: 5%;
-  color: #4E4B5C;
+  color: #323038;
 }
 
 .kata1{
@@ -337,6 +347,30 @@
   font-size: 20px;
 }
 
+.underline-box{
+  width: 100%;
+  height: 30px;
+  /* background-color: green; */
+  margin-bottom: 30px;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+}
+.underline1{
+  width: 540px;
+  height: 4px;
+  background-color: #4E4B5C;
+  margin-right: 0.5%;
+  border-radius: 1px;
+}
+.underline2{
+  width: 450px;
+  height: 4px;
+  background-color: #4E4B5C;
+  margin-right: 0.5%;
+  border-radius: 1px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -362,6 +396,7 @@
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {

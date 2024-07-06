@@ -12,13 +12,31 @@
   align-items: center;
 }
 
+.offer2{
+  width: 100%;
+  /* background-color: gray; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .offer-container1{
   height: 400px;
-  width: 1280px;
+  width: 1300px;
   max-width: 100%;
   /* background-color: green; */
   margin-top: 100px;
   display: flex;
+}
+
+.offer-container2{
+  height: 850px;
+  width: 1300px;
+  max-width: 100%;
+  /* background-color: green; */
+  margin-top: 100px;
+  display: flex;
+  position: relative;
 }
 
 .offer-title1{
@@ -37,6 +55,13 @@
   line-height: normal;
 }
 
+.offer-title2{
+  justify-content: center;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+
 .offer-text-container1{
   width: 55%;
   height: 100%;
@@ -44,6 +69,31 @@
   justify-content: center;
   align-items: center;
   /* background-color: red; */
+}
+
+.offer-text-container2{
+  width: 60%;
+  height: 70%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #323038;
+  display: flex;
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-img2{
+  position: absolute;
+  width: 80%;
+  height: 70%;
+}
+
+.SaintLuica{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .offer-text{
@@ -59,19 +109,40 @@
 
 .offer-price{
   /* background-color: green; */
-  width: 90%;
+  width: 95%;
   margin-top: 8%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .offer-button{
   width: 150px;
   height: 40px;
-  font-size: 14px;
+  font-size: 15px;
   border-radius: 5px;
   background: transparent;
   border: solid 2px;
   border-color: #000;
   color: #000;
+  transition-duration: 0.4s;
+}.offer-button:hover{
+  color: rgb(0, 0, 0, 0.6);
+  border-color: rgb(0, 0, 0, 0.5);
+}
+
+.offer-button2{
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 5px;
+  background: transparent;
+  border: solid 2px;
+  border-color: rgb(218, 218, 218, 0.9);
+  color: rgb(218, 218, 218, 0.9);
+  transition-duration: 0.4s;
+}.offer-button2:hover{
+  color: rgb(190, 190, 190, 0.9);
+  border-color: rgb(180, 180, 180, 0.9);
+  background-color: rgb(218, 218, 218, 0.15);;
 }

@@ -61,9 +61,9 @@ function App() {
         <h1>Wycieczki Katamaranem</h1>
         <h2>Żegluj z nami w rytmie Karaibów – Katamaranowe <br/> Przygody pełne słońca i morskich emocji!</h2>
         <button className='video-button'>
-          Zobacz oferte
+          Zobacz ofertę
         </button>
-        <p className='copyright' style={{ right: '1%' }}>© Boss Talk Productions</p>
+        <p className='copyright' style={{ right: '2px' }}>© Boss Talk Productions</p>
       </div>
       <div className='photo-frame'>
         <div className='scroll-frame'>
@@ -80,11 +80,15 @@ function App() {
         </div>
       </div>
       <p className='title'>Nasze Katamarany</p>
+      <div className='underline-box'>
+        <div className='underline1'></div>
+        <div className='underline2'></div>
+      </div>
       <div className='kata-container' style={{justifyContent: 'right'}}>
         <div className= "kata1">
           <div className='katacontainer'>
             <img className='kataphoto1' src={bahia} alt='Bahia 46'></img>
-            <p className='copyright' style={{ left: '1%' }}>© Boss Talk Productions</p>
+            <p className='copyright' style={{ left: '2%' }}>© Znajdz zdjecie</p>
           </div>
           <div className='katatextbox'>
             <span className='katatitle'>Bahia 46, S/Y "BAJKA"</span>
@@ -95,6 +99,7 @@ function App() {
           </div>
         </div>
       </div>
+      
       <div className='kata-container'>
         <div className= "kata2">
           <div className='katatextbox'>
@@ -102,15 +107,19 @@ function App() {
             <div className='katatextcontainer'>
               <span className='katatext'>Lagoon 42 może poszczycić się piękną sylwetką i nienaganną linią kadłuba, zachowuje idealne proporcje pomiędzy komfortem, a właściwościami nautycznymi. Wnętrze jachtu jest idealnie doświetlone za sprawą dużych, panoramicznych okien, które gwarantują także doskonałą widoczność podczas żeglugi. Kokpit Lagoon 42 oferuje załodze tyle miejsca, co na znacznie większych jednostkach.
               </span>
-            </div> 
+            </div>
           </div>
           <div className='katacontainer'>
             <img className='kataphoto2' src={lagoon} alt='Lagoon 42'></img>
-            <p className='copyright' style={{ right: '1%' }}>© Boss Talk Productions</p>
+            <p className='copyright' style={{ right: '1%' }}>© Znajdz zdjecie</p>
           </div>
         </div>
       </div>
       <p className='title'>Poznaj naszą ekipę!</p>
+      <div className='underline-box'>
+        <div className='underline1' style={{width: '550px'}}></div>
+        <div className='underline2' style={{width: '460px'}}></div>
+      </div>
       <div className='squad'>
         <div className='squad-container'>
           <div className='squad-card' style={{marginLeft: '30px'}}>
