@@ -1,0 +1,77 @@
+.Offer {
+    background-color: #D8D8D8;
+    font-family: 'Poppins';
+    position: relative;
+  }
+
+.offer1{
+  width: 100%;
+  /* background-color: gray; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-container1{
+  height: 400px;
+  width: 1280px;
+  max-width: 100%;
+  /* background-color: green; */
+  margin-top: 100px;
+  display: flex;
+}
+
+.offer-title1{
+  width: 45%;
+  height: 100%;
+  /* background-color: gold; */
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 74px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.offer-text-container1{
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.offer-text{
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* background-color: cyan; */
+  width: 75%;
+}
+
+.offer-price{
+  /* background-color: green; */
+  width: 90%;
+  margin-top: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer-button{
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 5px;
+  background: transparent;
+  border: solid 2px;
+  border-color: #000;
+  color: #000;
+}

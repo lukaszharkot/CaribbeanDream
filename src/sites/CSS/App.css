@@ -1,0 +1,416 @@
+.App {
+  background-color: #D8D8D8;
+  font-family: 'Poppins';
+  position: relative;
+}
+
+.video-background {
+  position: relative;
+  width: auto;
+  height: 100vh;
+}video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0px;
+}h1{
+  position: absolute;
+  color: rgb(218, 218, 218, 0.9);
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  left: 7%;
+  bottom: 27%;
+}h2{
+  position: absolute;
+  color: rgb(218, 218, 218, 0.9);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  left: 7%;
+  bottom: 19%;
+}
+
+.video-button {
+  width: 140px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #4E4B5C;
+  background: transparent;
+  border: solid;
+  border-color: rgb(218, 218, 218, 0.9);
+  color: rgb(218, 218, 218, 0.9);
+  position: absolute;
+  left: 7%;
+  bottom: 12%;
+}
+
+.big-logo-container{
+  width: 330px;
+  height: 100px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+  border-bottom: solid rgba(32, 30, 36, 0.867);
+  margin-bottom: 15px;
+  transition: opacity 0.4s ease-out;
+}.big-logo-container.scrolled{
+  opacity: 0;
+}
+
+.big-logo-container2{
+  width: auto;
+  height: 85px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid rgba(32, 30, 36, 0.867);
+  transition: opacity 0.4s ease-out;
+}.big-logo-container2.scrolled{
+  opacity: 0;
+}
+
+
+.big-logo1{
+  font-size: 32px;
+  margin-left: 3px;
+  margin-right: 5px;
+  color: rgba(32, 30, 36, 0.867); 
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+.big-logo1.scrolled{
+  opacity: 0;
+}
+
+.big-logo2{
+  font-size: 32px;
+  margin-left: 3px;
+  margin-right: 5px;
+  color: rgba(32, 30, 36, 0.867); 
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+.big-logo2.scrolled{
+  opacity: 0;
+}
+
+.big-logoimg{
+  height: 70px;
+  margin-bottom: 5px;
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+.big-logoimg.scrolled{
+  opacity: 0;
+}
+
+.bookmark{
+  height: 300px;
+  width: 600px;
+  position: absolute;
+  left: 0;
+  top: 0%;
+  background-color: transparent;
+  transition: opacity 0.4s ease-out;
+  opacity: 1;
+}.bookmark.scrolled{
+  opacity: 0;
+}
+
+.bookmark-start{
+  height: 120px;
+  width: 170px;
+  background-color:  rgba(218, 218, 218, 0.75);;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  box-shadow: 0px 0px 4px 0px;
+}.parallelogram{
+  width: 138px;
+	height: 60px;
+	transform: skew(30deg) rotate(120deg);
+	background:  rgb(218, 218, 218, 0.7);;
+  box-shadow: 0px 0px 1px 0px;
+  position: absolute;
+  top: 55%;
+  left:11.1%;
+}.bookmark-end{
+  height: 120px;
+  width: 450px;
+  background-color:  rgb(218, 218, 218, 0.95);;
+  position: absolute;
+  left: 16.7%;
+  top: 40%;
+  box-shadow: 0px 0px 4px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-frame{
+  margin-top: 80px;
+  width: 100vw;
+  max-width:100%;  /* added */
+  background-color: white;
+  height: 400px;
+  display: grid;
+  position: relative;
+}
+
+.gallery-button{
+  width: 140px;
+  height: 35px;
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #4E4B5C;
+  border-color: #4E4B5C;
+}
+
+.button-div{
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-frame{
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  background-color: transparent;
+  height: 260px;
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  align-items: center;
+  scroll-margin-left: -50px;
+  scroll-snap-align: start;
+}
+
+.scroll-photo{
+  margin-left: 50px;
+  height: 100%;
+}
+
+.title{
+  color: #4E4B5C;
+  text-align: center;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+
+.kata-container{
+  position: relative;
+  display: flex;
+}
+.katacontainer{
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.katatextbox{
+  width: 50%;
+  justify-content: center;
+}
+.katatitle{
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: 7%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  color: #4E4B5C;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+}
+.katatextcontainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.katatext{
+  font-weight: 500;
+  height: 430px;
+  white-space: normal;
+  overflow: hidden;
+  font-size: 22px;
+  width: 550px;
+  text-overflow: ellipsis;
+  max-width: 80%;
+  justify-content: center;
+  margin-top: 5%;
+  color: #4E4B5C;
+}
+
+.kata1{
+  width: 1500px;
+  height: 550px;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  right: 0;
+  position: relative;
+  display: flex;
+  max-width: 100%;
+}
+.kataphoto1{
+  height: 100%;
+  position: absolute;
+  left: 0;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.kata2{
+  width: 1500px;
+  margin-top: 100px;
+  height: 550px;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  display: flex;
+  max-width: 100%;
+}
+.kataphoto2{
+  height: 100%;
+  position: absolute;
+  right: 0;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.squad{
+  width: 100vw;
+  max-width: 100%;
+  height: 500px;
+  background-color: white;
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.10); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.squad-container{
+  width: 1280px;
+  max-width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  align-items: center;
+}
+
+.squad-card{
+  width: 200px;
+  min-width: 200px;
+  height: 80%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.squad-img{
+  width: 100%;
+}
+
+.squad-name{
+  font-size: 26px;
+}
+
+.squad-title{
+  font-size: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes slideOutLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+}
+
+.slideOutLeft {
+  opacity: 1;
+}
+
+.slideOutLeft.animated {
+  animation: slideOutLeft 0.5s ease-in;
+  opacity: 0;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideInLeft {
+  opacity: 0;
+}
+
+.slideInLeft.animated {
+  animation: slideInLeft 0.8s ease-out;
+  opacity: 1;
+}
+
+

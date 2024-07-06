@@ -1,0 +1,36 @@
+.Contact {
+    background-color: #D8D8D8;
+    font-family: 'Poppins';
+    position: relative;
+  }
+
+.contact-container{
+    height: 750px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ez{
+    height: 90%;
+    width: 1000px;
+    max-width: 100%;
+}
+
+.contact-text{
+    width: 50%;
+    position: relative;
+    height: 100%;
+    background-color: gray;
+}
+
+.t1{
+    color: #4E4B5C;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 33.8px */
+}
