@@ -6,6 +6,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './sites/App';
 import Offer from './sites/Offer';
+import Apply from './sites/Apply';
 import Contact from './sites/Contact';
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: 'oferta',
         element: <Offer />,
+      },
+      {
+        path: 'zglos',
+        element: <Apply />,
       },
       {
         path: 'kontakt',

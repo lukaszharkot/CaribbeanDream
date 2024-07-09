@@ -42,6 +42,13 @@ code {
   opacity: 1;
 }
 
+.logo-div{
+  visibility: hidden;
+  transition: visibility 0.8s ease-out;
+}.logo-div.scrolled{
+  visibility: visible;
+}
+
 .navcontainer{
   /* background: green; */
   height: 90%;
@@ -66,7 +73,7 @@ code {
   display: flex;
   text-align: center;
   font-weight: 500;
-  margin-left: 25px;
+  margin-left: 20px;
 }a{
   text-decoration: none;
   color: inherit;
@@ -116,7 +123,6 @@ code {
 .baner{
   width: 100%;
   height: 500px;
-  background-color: yellow;
   position: relative;
 }
 .baner-img{
@@ -150,19 +156,285 @@ code {
 }
 
 .footer{
-  height: 130px;
+  height: 185px;
   width: 100%;
   background: #4E4B5C;
   display: flex;
+  justify-content: center;
   position: relative;
-  justify-content: right;
-  align-items: end;
-}p{
+}
+.footer-title{
   color: #E3E3E3;
   font-family: Poppins;
-  font-size: 12px;
-  font-style: normal;
-  margin-right: 10px;
-  font-weight: 400;
-  line-height: normal;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
+.footer-text{
+  color: #E3E3E3;
+  font-family: Poppins;
+  font-size: 14px;
+  margin-top: 15px;
+}
+.designedby{
+  color: #878787;
+  font-family: Poppins;
+  font-size: 11px;
+  position: absolute;
+  right: 1%;
+  bottom: 0%;
+}
+
+.footer1{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+}
+.footer2{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+}
+.footer3{
+  width: 500px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+}
+
+.icon-end{
+  margin-top: 15px;
+  font-size: 42px;
+  margin-right: 10px;
+  color: #E3E3E3;
+  transition-duration: 0.4s;
+}.icon-end:hover{
+  color: #898989;
+}
+
+.endicon-div{
+  margin-left: -4px;
+}
+
+.PopUpBoxLeft{
+  background-color: white;
+  width: 786px;
+  height: 100%;
+  position: fixed;
+  z-index: 992;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PopUpBoxRight{
+  background-color: white;
+  width: 786px;
+  height: 100%;
+  position: fixed;
+  z-index: 992;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PopUpContainer{
+  width: 600px;
+  height: auto;
+  margin-top: 150px;
+}
+.PopUpTextBox{
+  width: 600px;
+  height: auto;
+}
+.PopUpPrice{
+  width: 600px;
+  height: 50px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.BackgroundBlurOff{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(32, 30, 36, 0.3);
+  display: flex;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  left:0;
+  top: 0;
+  z-index: 991;
+  transition-duration: 0.3s;
+}
+.BackgroundBlurOn{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(32, 30, 36, 0.3);
+  display: flex;
+  position: fixed;
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+  top: 0;
+  z-index: 991;
+  transition-duration: 0.3s;
+}
+
+.exitLeft{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 87px;
+  top: 150px;
+}
+.exitRight{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 87px;
+  top: 150px;
+}
+
+.exitLeft:hover .x1{
+  transition-duration: 0.4s;
+  border-color: rgba(70, 70, 70, 1)
+}
+.exitLeft:hover .x2{
+  transition-duration: 0.4s;
+  border-color: rgba(70, 70, 70, 1)
+}
+.exitRight:hover .x1{
+  transition-duration: 0.4s;
+  border-color: rgba(70, 70, 70, 1)
+}
+.exitRight:hover .x2{
+  transition-duration: 0.4s;
+  border-color: rgba(70, 70, 70, 1)
+}
+
+.x1{
+  width: 80%;
+  border: 2px solid;
+  background-color: rgba(32, 30, 36, 1);
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  border-color: rgba(32, 30, 36, 1);
+  transition-duration: 0.4s;
+}
+
+.x2{
+  width:80%;
+  border: 2px solid;
+  background-color: rgba(32, 30, 36, 1);
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-color: rgba(32, 30, 36, 1);
+  transition-duration: 0.4s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.appear {
+  opacity: 0;
+}
+
+.appear.animated {
+  animation: appear 0.8s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideInLeft {
+  opacity: 0;
+}
+
+.slideInLeft.animated {
+  animation: slideInLeft 0.8s ease-out;
+  opacity: 1;
+}
+
+@keyframes slideInRight{
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideInRight {
+  opacity: 0;
+}
+
+.slideInRight.animated {
+  animation: slideInRight 0.8s ease-out;
+  opacity: 1;
+}
+
+
+@keyframes slideOutLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+}
+
+.slideOutLeft {
+  opacity: 1;
+}
+
+.slideOutLeft.animated {
+  animation: slideOutLeft 0.5s ease-in;
+  opacity: 0;
+}
+
+@keyframes slideOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
+
+.slideOutRight{
+  opacity: 1;
+}
+
+.slideOutRight.animated {
+  animation: slideOutRight 0.5s ease-in;
+  opacity: 0;
+}
+

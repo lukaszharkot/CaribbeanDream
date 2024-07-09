@@ -24,9 +24,9 @@ export function Navbar(props) {
     return(
       <div className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className='logo-container'>
-          <p className={`logo ${scrolled ? 'scrolled' : ''}`}>Caribbean</p>
-          <img src={logo} alt="Logo" className={`logoimg ${scrolled ? 'scrolled' : ''}`}/>
-          <p className={`logo ${scrolled ? 'scrolled' : ''}`}>Dream</p>
+          <p className={`logo ${scrolled ? 'scrolled' : ''}`}><a href='/'>Caribbean</a></p>
+          <div className={`logo-div ${scrolled ? 'scrolled' : ''}`}><a href='/'><img src={logo} alt="Logo" className={`logoimg ${scrolled ? 'scrolled' : ''}`}/></a></div>
+          <p className={`logo ${scrolled ? 'scrolled' : ''}`}><a href='/'>Dream</a></p>
         </div>
         <div className={`navcontainer ${scrolled ? 'scrolled' : ''}`}>
           <div className={`navbuttons${props.site === 'sg' ? ' navbuttonsbold' : ''}`} style={{ width: 'auto'}}><a href='/'>STRONA GŁÓWNA</a></div>

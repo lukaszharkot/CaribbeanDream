@@ -60,9 +60,9 @@ function App() {
         </div>
         <h1>Wycieczki Katamaranem</h1>
         <h2>Żegluj z nami w rytmie Karaibów – Katamaranowe <br/> Przygody pełne słońca i morskich emocji!</h2>
-        <button className='video-button'>
+        <a href='/oferta'><button className='video-button'>
           Zobacz ofertę
-        </button>
+        </button></a>
         <p className='copyright' style={{ right: '2px' }}>© Boss Talk Productions</p>
       </div>
       <div className='photo-frame'>
@@ -74,9 +74,9 @@ function App() {
           <img className='scroll-photo' src={scroll5} alt='Bahia 46' style={{marginRight: '50px'}}></img>
         </div>
         <div className='button-div'>
-          <button className='gallery-button'>
+          <a href='/galeria'><button className='gallery-button'>
             Galeria zdjęć
-          </button>
+          </button></a>
         </div>
       </div>
       <p className='title'>Nasze Katamarany</p>
