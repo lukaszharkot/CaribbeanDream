@@ -6,7 +6,10 @@
 
 .container{
     width: 100%;
-    height: 300px;
+    padding-top: 30px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
     background-color: white;
 }
 
@@ -68,4 +71,123 @@
 .big-logoimgapply{
     height: 55px;
     margin-bottom: 5px;
+}
+
+.apply-input-div{
+    position: relative;
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input3{
+    width: 150px;
+    border: 0;
+    border-bottom: 2px solid;
+    border-color: #cfcfcf;
+    height: 40px;
+    font-size: 16px;
+    font-family: arial;
+    color: #323038;
+    margin-bottom: 20px;
+    transition: color 0.4ms ease-out;
+}.input3::placeholder {
+    color: #a7a7a7;
+    opacity: 1; /* Firefox */
+    transition: color 0.4ms ease-out;
+}.input3:focus{
+    outline: none;
+    border-bottom: 2px solid;
+    border-color: #808080;
+    transition-duration: 0.4ms;
+    transition: color 0.4ms ease-out;
+}
+
+.input4{
+    width: 153px;
+    border: 0;
+    border-bottom: 2px solid;
+    border-color: #cfcfcf;
+    height: 42px;
+    font-size: 16px;
+    font-family: arial;
+    color: #323038;
+    margin-bottom: 20px;
+    transition: color 0.4ms ease-out;
+}.input4::placeholder {
+    color: #a7a7a7;
+    opacity: 1; /* Firefox */
+    transition: color 0.4ms ease-out;
+}.input4:focus{
+    outline: none;
+    border-bottom: 2px solid;
+    border-color: #808080;
+    transition-duration: 0.4ms;
+    transition: color 0.4ms ease-out;
+}
+
+.input5{
+    width: 150px;
+    border: 0;
+    border-bottom: 2px solid;
+    border-color: #cfcfcf;
+    height: 45px;
+    margin-right: -4px;
+    font-size: 16px;
+    font-family: arial;
+    color: #323038;
+    margin-bottom: 20px;
+    transition: color 0.4ms ease-out;
+}.input5::placeholder {
+    color: #a7a7a7;
+    opacity: 1; /* Firefox */
+    transition: color 0.4ms ease-out;
+}.input5:focus{
+    outline: none;
+    border-bottom: 2px solid;
+    border-color: #808080;
+    transition-duration: 0.4ms;
+    transition: color 0.4ms ease-out;
+}
+
+.input-apply-div{
+    position: absolute;
+    right: 5%;
+    bottom: 15px;
+}
+
+.t3{
+    font-size: 16px;
+    color: #7a7a7a;
+}
+
+.apply-input-container{
+    height: 90%;
+    width: auto;
+    position: relative;
+    display: grid;
+}
+
+.route-box{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    justify-items: center;
+}
+
+.route-img{
+    width: 90%;
+    height: 300px;
+    background-color: wheat;
+    margin-top: -40px;
+    transition-duration: 0.4s;
+}
+
+.route-text{
+    margin-top: -40px;
+    width: 90%;
+    height: 130px;
+    transition-duration: 0.4s;
 }

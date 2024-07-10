@@ -63,7 +63,7 @@ function App() {
         <a href='/oferta'><button className='video-button'>
           Zobacz ofertę
         </button></a>
-        <p className='copyright' style={{ right: '2px' }}>© Boss Talk Productions</p>
+        <p className='copyright' style={{ right: '1%' }}>© Boss Talk Productions</p>
       </div>
       <div className='photo-frame'>
         <div className='scroll-frame'>
@@ -98,9 +98,11 @@ function App() {
             </div> 
           </div>
         </div>
+        <div className='filler'></div>
       </div>
       
       <div className='kata-container'>
+        <div className='filler' style={{marginTop: '100px', boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.25)'}}></div>
         <div className= "kata2">
           <div className='katatextbox'>
             <span className='katatitle'>Lagoon 42, S/Y "LITTLE CLOUD"</span>
@@ -124,31 +126,31 @@ function App() {
         <div className='squad-container'>
           <div className='squad-card' style={{marginLeft: '30px'}}>
             <img className='squad-img' src={squad1} alt='Jan Kowalski / Kapitan'></img>
-            <p className='copyright' style={{ right: '0', top: '58%', fontSize: '10px' }}>Unsplash / Sander Lenaerts</p>
+            <p className='copyright' style={{ right: '4%', top: '58%', fontSize: '10px' }}>Unsplash / Sander Lenaerts</p>
             <span className='squad-name'>Jan Kowalski</span>
             <span className='squad-title'>Kapitan</span>
           </div>
           <div className='squad-card'>
             <img className='squad-img' src={squad3} alt='Andrzej Kos / Kapitan'></img>
-            <p className='copyright' style={{ right: '0', top: '58%', fontSize: '10px' }}>Unsplash / Ivan Lapyrin</p>
+            <p className='copyright' style={{ right: '4%', top: '58%', fontSize: '10px' }}>Unsplash / Ivan Lapyrin</p>
             <span className='squad-name'>Andrzej Kos</span>
             <span className='squad-title'>Kapitan</span>
           </div>
           <div className='squad-card'>
             <img className='squad-img' src={squad2} alt='Sandra Mróz / Pilot'></img>
-            <p className='copyright' style={{ right: '0', top: '58%', fontSize: '10px' }}>Unsplash / Marie Bouchart</p>
+            <p className='copyright' style={{ right: '4%', top: '58%', fontSize: '10px' }}>Unsplash / Marie Bouchart</p>
             <span className='squad-name'>Sandra Mróz</span>
             <span className='squad-title'>Pilot</span>
           </div>
           <div className='squad-card'>
             <img className='squad-img' src={squad4} alt='Paweł Dręda / Przewodnik'></img>
-            <p className='copyright' style={{ right: '0', top: '58%', fontSize: '10px' }}>Unsplash / Alicia Steels</p>
+            <p className='copyright' style={{ right: '4%', top: '58%', fontSize: '10px' }}>Unsplash / Alicia Steels</p>
             <span className='squad-name'>Paweł Dręda</span>
             <span className='squad-title'>Przewodnik</span>
           </div>
           <div className='squad-card'style={{marginRight: '30px'}}>
             <img className='squad-img' src={squad5} alt='Wiktor Marzec / Kierownik biura'></img>
-            <p className='copyright' style={{ right: '0', top: '58%', fontSize: '10px' }}>Unsplash / Dragos Gontariu</p>
+            <p className='copyright' style={{ right: '4%', top: '58%', fontSize: '10px' }}>Unsplash / Dragos Gontariu</p>
             <span className='squad-name'>Wiktor Marzec</span>
             <span className='squad-title'>Kierownik biura</span>
           </div>  

@@ -16,7 +16,7 @@ function Offer() {
                 <span className='baner-text'>Zobacz jakie miejsca możesz z nami odwiedzić!</span>
             </div>
             <div className='offer1'>
-                <div className='offer-container1'>
+                <div className='offer-container1' style={{paddingTop: '50px'}}>
                     <div className='offer-title1'>Karaiby</div>
                     <div className='offer-text-container1'>
                         <div className='offer-text'>

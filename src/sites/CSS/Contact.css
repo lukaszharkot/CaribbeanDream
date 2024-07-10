@@ -93,6 +93,7 @@
     border-color: #cfcfcf;
     height: 40px;
     font-size: 16px;
+    font-family: arial;
     color: #323038;
     margin-bottom: 20px;
     transition: color 0.4ms ease-out;

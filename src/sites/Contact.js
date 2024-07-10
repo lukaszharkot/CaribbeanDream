@@ -23,6 +23,13 @@ function Contact() {
         setMessage('');
     };
 
+    const handleFocusText = (event) => {
+        event.target.placeholder = ''
+    }
+    const handleBlurText = (event) => {
+        event.target.placeholder = 'Dodatkowe informacje'
+    }
+
     return (
         <div className='Contact'>
             <Navbar site={'kn'}/>
@@ -62,7 +69,7 @@ function Contact() {
                             <p className='t2 appear animated' style={{animationDelay: '0.2s'}}>Skontaktuj się z nami!</p>
                             <div><input className='input1 appear animated' style={{animationDelay: '0.4s'}} placeholder='E-mail' name='email' value={email} onChange={handleInputChange}></input></div>
                             <div><input className='input1 appear animated' style={{animationDelay: '0.6s'}} placeholder='Imię i Nazwisko' name='name' value={name} onChange={handleInputChange}></input></div>
-                            <div><textarea className='input2 appear animated' style={{animationDelay: '0.8s'}} placeholder='Treść wiadomości' name='message' value={message} onChange={handleInputChange}></textarea></div>
+                            <div><textarea className='input2 appear animated' style={{animationDelay: '0.8s'}} placeholder='Treść wiadomości' name='message' value={message} onChange={handleInputChange} onFocus={handleFocusText} onBlur={handleBlurText}></textarea></div>
                             <div className='input-button-div appear animated' style={{animationDelay: '1.2s'}}><button onClick={handleButtonClick} className='contact-button'>Wyślij</button></div>
                         </div>
                     </div>
