@@ -7,7 +7,7 @@
 .container{
     width: 100%;
     padding-top: 30px;
-    height: 650px;
+    height: 680px;
     display: flex;
     justify-content: center;
     background-color: white;
@@ -154,7 +154,7 @@
 .input-apply-div{
     position: absolute;
     right: 5%;
-    bottom: 15px;
+    bottom: -20px;
 }
 
 .t3{
@@ -181,12 +181,12 @@
     width: 90%;
     height: 300px;
     background-color: wheat;
-    margin-top: -40px;
+    margin-top: -15px;
     transition-duration: 0.4s;
 }
 
 .route-text{
-    margin-top: -40px;
+    margin-top: -25px;
     width: 90%;
     height: 130px;
     transition-duration: 0.4s;

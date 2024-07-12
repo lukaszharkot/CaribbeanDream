@@ -1,0 +1,11 @@
+.App {
+    background-color: #D8D8D8;
+    font-family: 'Poppins';
+    position: relative;
+}
+
+.container-gallery{
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - (500px + 185px));
+}

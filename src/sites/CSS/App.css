@@ -168,6 +168,16 @@
   display: grid;
   justify-content: center;
   position: relative;
+}.photo-frame:hover .left-arrow{
+  opacity: 1;
+  visibility: visible;
+  transition-duration: 0.4s;
+  animation: slideInLeftArrow 0.4s forwards;
+}.photo-frame:hover .right-arrow{
+  opacity: 1;
+  visibility: visible;
+  transition-duration: 0.4s;
+  animation: slideInRightArrow 0.4s forwards;
 }
 
 .gallery-button{
@@ -203,8 +213,130 @@
   align-items: center;
   transition-duration: 4ms;
   position: relative;
+  scroll-behavior: smooth;
 }
 
+.right-arrow{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1),
+              4px 0px 10px rgba(0, 0, 0, 0.1),
+             -4px 0px 10px rgba(0, 0, 0, 0.1);;
+  right: 2.9%;
+  top: 155px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+  transition-duration: 0.4s;
+  animation: slideOutRightArrow 0.4s forwards;
+}.right-arrow:hover{
+  background-color: rgba(255,255,255,1);
+}
+
+.right-a{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1),
+              4px 0px 10px rgba(0, 0, 0, 0.1),
+             -4px 0px 10px rgba(0, 0, 0, 0.1);;
+  right: 2.9%;
+  top: 155px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+  transition-duration: 0.4s;
+  animation: slideOutRightArrow 0.4s forwards;
+}
+
+.left-arrow{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1),
+              4px 0px 10px rgba(0, 0, 0, 0.1),
+             -4px 0px 10px rgba(0, 0, 0, 0.1);;
+  left: 2.9%;
+  top: 155px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+  animation: slideOutLeftArrow 0.4s forwards;
+  transition-duration: 0.4s;
+}.left-arrow:hover{
+  background-color: rgba(255,255,255,1);
+}.left-arrow:hover .arrow-x1{
+  background-color: rgb(0, 0, 0);
+}.left-arrow:hover .arrow-x2{
+  background-color: rgb(0, 0, 0);
+}
+
+.left-a{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1),
+              4px 0px 10px rgba(0, 0, 0, 0.1),
+             -4px 0px 10px rgba(0, 0, 0, 0.1);;
+  left: 2.9%;
+  top: 155px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+  transition-duration: 0.4s;
+  animation: slideOutLeftArrow 0.4s forwards;
+}
+
+.arrow-div{
+  width: 15px;
+  height: 15px;
+  position: relative;
+}
+
+.arrow-x1{
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: rgb(53, 53, 53);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition-duration: 0.4s;
+}
+
+.arrow-x2{
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: rgb(53, 53, 53);
+  bottom: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition-duration: 0.4s;
+}
 /* Firefox */
 
 /*.scroll-frame {
@@ -245,8 +377,11 @@
 
 
 .scroll-photo{
-  margin-left: 45px;
+  margin-left: 25px;
+  margin-right: 25px;
   height: 100%;
+  width: 400px;
+  object-fit: cover;
 }
 
 .title{
@@ -272,19 +407,19 @@
 .katatextbox{
   width: 50%;
   justify-content: center;
+  align-items: center;
 }
 .katatitle{
   font-weight: 600;
-  font-size: 32px;
+  font-size: 30px;
   margin-top: 7%;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 50px;
+  height: auto;
   color: #323038;
-  text-overflow: ellipsis;
   white-space: normal;
-  overflow: hidden;
 }
 .katatextcontainer{
   width: 100%;
@@ -293,12 +428,12 @@
 }
 .katatext{
   font-weight: 500;
-  height: 430px;
+  height: auto;
   white-space: normal;
   overflow: hidden;
-  font-size: 22px;
+  font-size: 21px;
   width: 550px;
-  text-overflow: ellipsis;
+  margin-bottom: 5%;
   max-width: 80%;
   justify-content: center;
   margin-top: 5%;
@@ -307,7 +442,7 @@
 
 .kata1{
   width: 1500px;
-  height: 550px;
+  height: auto;
   background-color: white;
   box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
   right: 0;
@@ -318,6 +453,7 @@
 .kataphoto1{
   height: 100%;
   position: absolute;
+  width: 100%;
   left: 0;
   max-width: 100%;
   object-fit: cover;
@@ -326,7 +462,7 @@
 .kata2{
   width: 1500px;
   margin-top: 100px;
-  height: 550px;
+  height: auto;
   background-color: white;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
   position: relative;
@@ -449,30 +585,30 @@
 }
 
 
-@keyframes slideOutLeft {
+@keyframes slideOutLeftArrow {
   from {
     opacity: 1;
     transform: translateX(0px);
   }
   to {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-20px);
   }
 }
 
-.slideOutLeft {
+.slideOutLeftArrow {
   opacity: 1;
 }
 
-.slideOutLeft.animated {
-  animation: slideOutLeft 0.5s ease-in;
+.slideOutLeftArrow.animated {
+  animation: slideOutLeftArrow 0.5s ease-in;
   opacity: 0;
 }
 
-@keyframes slideInLeft {
+@keyframes slideInLeftArrow {
   from {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-20px);
   }
   to {
     opacity: 1;
@@ -480,12 +616,12 @@
   }
 }
 
-.slideInLeft {
+.slideInLeftArrow {
   opacity: 0;
 }
 
-.slideInLeft.animated {
-  animation: slideInLeft 0.8s ease-out;
+.slideInLefArrowt.animated {
+  animation: slideInLeftArrow 0.8s ease-out;
   opacity: 1;
 }
 
@@ -495,4 +631,61 @@
   width: calc((100vw - 1700px)/2);
   background-color: white;
   box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes slideOutRightArrow {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+.slideOutRightArrow{
+  opacity: 1;
+}
+
+.slideOutRighArrow.animated {
+  animation: slideOutRightArrow 0.5s ease-in;
+  opacity: 0;
+}
+
+@keyframes slideInRightArrow{
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideInRightArrow {
+  opacity: 0;
+}
+
+.slideInRightArrow.animated {
+  animation: slideInRightArrow 0.8s ease-out;
+  opacity: 1;
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.disappear {
+  opacity: 1;
+}
+
+.disappear.animated {
+  animation: disappear 0.4s ease-out forwards;
 }

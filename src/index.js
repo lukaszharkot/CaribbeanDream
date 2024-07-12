@@ -8,6 +8,7 @@ import App from './sites/App';
 import Offer from './sites/Offer';
 import Apply from './sites/Apply';
 import Contact from './sites/Contact';
+import Gallery from './sites/Gallery';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: 'zglos',
         element: <Apply />,
+      },
+      {
+        path: 'galeria',
+        element: <Gallery />,
       },
       {
         path: 'kontakt',

@@ -22,7 +22,7 @@ export function Footer() {
                 <div style={{backgroundColor: 'white', width: '53px', height: '2px', borderRadius: '1px'}}></div>
                 <p className="footer-text">Jesteśmy firmą działającą od 2014 roku. Rejsy katamaranem to nasza pasja i jesteśmy dumni, że możemy dzielić ją właśnie z Tobą!</p>
             </div>
-            <p className="designedby">© 2024 Designed by Łukasz Harkot, Olaf Ryznar, Dominik Grabowski. Developed by Łukasz Harkot.</p>
+            <p className="designedby">© 2024 Designed by Łukasz Harkot, Olaf Ryznar, Dominik Grabowski. Developed by Łukasz Harkot. Photos from Unsplash.</p>
         </div>
     )
 }

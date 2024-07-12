@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 body {
   margin: 0;
@@ -73,7 +74,7 @@ code {
   display: flex;
   text-align: center;
   font-weight: 500;
-  margin-left: 20px;
+  margin-left: 18px;
 }a{
   text-decoration: none;
   color: inherit;
@@ -344,6 +345,119 @@ code {
   transition-duration: 0.4s;
 }
 
+.ToasterOn{
+  position: fixed;
+  right: 1%;
+  bottom: 2%;
+  width: 320px;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1),
+              4px 0px 10px rgba(0, 0, 0, 0.1),
+             -4px 0px 10px rgba(0, 0, 0, 0.1);
+  text-overflow: clip;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  visibility: visible;
+  transition-duration: 0.4s;
+  z-index: 999;
+}.ToasterOff{
+  position: fixed;
+  right: 1%;
+  bottom: 2%;
+  width: 260px;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1),
+              4px 0px 10px rgba(0, 0, 0, 0.1),
+             -4px 0px 10px rgba(0, 0, 0, 0.1);
+  text-overflow: clip;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition-duration: 0.4s;
+  z-index: 999;
+}
+
+.Toaster-line{
+  height: 100%;
+  margin-left: 25px;
+  width: 10px;
+}.Toaster-line.error{
+  background-color: rgb(255, 101, 77);
+}.Toaster-line.success{
+  background-color: rgb(72, 170, 77);;
+}
+
+.Toaster-title{
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}.Toaster-title.error{
+  color: rgb(255, 101, 77);
+}.Toaster-title.success{
+  color: rgb(72, 170, 77);;
+}
+
+.Toaster-text{
+  font-size: 14px;
+  margin-top: 2px;
+  font-family: "Varela Round", sans-serif;
+  width: 210px;
+  height: 40px;
+}
+
+.Toaster-text-container{
+  margin-left: 12px;
+  margin-bottom: 7px;
+  text-overflow: clip;
+  height: 75%;
+  color: #7b7b7b;
+  overflow: hidden;
+  display: grid;
+}
+
+.exit-toaster{
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 12%;
+  right: 4%;
+}
+.line1{
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition-duration: 0.2s;
+}
+.line2{
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition-duration: 0.2s;
+}
+
+.exit-toaster:hover .line1{
+  background-color: rgba(70, 70, 70, 1);
+  transition-duration: 0.2s;
+}
+.exit-toaster:hover .line2{
+  background-color: rgba(70, 70, 70, 1);
+  transition-duration: 0.2s;
+}
+
 @keyframes appear {
   from {
     opacity: 0;
@@ -359,6 +473,23 @@ code {
 
 .appear.animated {
   animation: appear 0.8s ease-out forwards;
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.disappear {
+  opacity: 1;
+}
+
+.disappear.animated {
+  animation: disappear 0.8s ease-out forwards;
 }
 
 @keyframes slideInLeft {

@@ -1,6 +1,7 @@
 import './CSS/Contact.css';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
+import { Toaster } from '../components/Toaster';
 import baner from '../photos/contact/baner.png';
 import { useState } from 'react';
 
@@ -9,6 +10,7 @@ function Contact() {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
+    const [toasterMessage, setToasterMessage] = useState('error')
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -18,9 +20,15 @@ function Contact() {
     };
 
     const handleButtonClick = () => {
-        setEmail('');
-        setName('');
-        setMessage('');
+        if (email === '' || name === '' || message === ''){
+            setToasterMessage('error');
+        }else{
+            setToasterMessage('success-contact')
+            setEmail('');
+            setName('');
+            setMessage('');
+        }
+ 
     };
 
     const handleFocusText = (event) => {
@@ -70,7 +78,7 @@ function Contact() {
                             <div><input className='input1 appear animated' style={{animationDelay: '0.4s'}} placeholder='E-mail' name='email' value={email} onChange={handleInputChange}></input></div>
                             <div><input className='input1 appear animated' style={{animationDelay: '0.6s'}} placeholder='Imię i Nazwisko' name='name' value={name} onChange={handleInputChange}></input></div>
                             <div><textarea className='input2 appear animated' style={{animationDelay: '0.8s'}} placeholder='Treść wiadomości' name='message' value={message} onChange={handleInputChange} onFocus={handleFocusText} onBlur={handleBlurText}></textarea></div>
-                            <div className='input-button-div appear animated' style={{animationDelay: '1.2s'}}><button onClick={handleButtonClick} className='contact-button'>Wyślij</button></div>
+                            <Toaster status={toasterMessage} handleButtonClick={handleButtonClick} site='contact'/>
                         </div>
                     </div>
                 </div>

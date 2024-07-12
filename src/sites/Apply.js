@@ -4,6 +4,7 @@ import baner from '../photos/apply/baner.png';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { useState } from 'react';
+import { Toaster } from '../components/Toaster';
 
 function Apply() {
 
@@ -33,6 +34,7 @@ function Apply() {
     const [tel, setTel] = useState('');
     const [date, setDate] = useState('');
     const [route, setRoute] = useState('Karaiby');
+    const [toasterMessage, setToasterMessage] = useState('error')
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -51,17 +53,17 @@ function Apply() {
     };
 
     const handleButtonClick = () => {
-        setEmail('');
-        setName('');
-        setMessage('');
-        setTel('');
-        setDate('');
-        setRoute('Karaiby');
-        // if (email === '' || name === '' || message === '' || tel === '' || date === ''){
-        //     Toaster(success)
-        // }else{
-        //     Toaster(error)
-        // }
+        if (email === '' || name === '' || route === '' || tel === '' || date === '') {
+            setToasterMessage('error');
+        } else {
+            setToasterMessage('success-apply');
+            setEmail('');
+            setName('');
+            setMessage('');
+            setTel('');
+            setDate('');
+            setRoute('Karaiby');
+        }
     };
 
     const handleFocus = (event) => {
@@ -131,7 +133,8 @@ function Apply() {
                         <div style={{width: '90%', marginBottom: '-30px', marginTop: '30px'}}><p className='t3 appear animated' style={{animationDelay: '0.3s'}}>Trasa podróży</p></div>
                         <div className='route-img appear animated' style={{animationDelay: '0.6s'}}><img src={`/${route}.png`} alt={route} /></div>
                         <div className='route-text appear animated' style={{animationDelay: '0.9s'}}>{textSelector()}</div>
-                        <div className='input-apply-div appear animated' style={{animationDelay: '1.2s'}}><button onClick={handleButtonClick} className='contact-button'>Wyślij</button></div>
+                        <Toaster status={toasterMessage} handleButtonClick={handleButtonClick} site='apply'/>
+                        
                     </div>
                 </div>
             </div>

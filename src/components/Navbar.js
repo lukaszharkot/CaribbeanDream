@@ -23,7 +23,7 @@ export function Navbar(props) {
 
     return(
       <div className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-        <div className='logo-container'>
+        <div className='logo-container' style={{marginLeft: '5px'}}>
           <p className={`logo ${scrolled ? 'scrolled' : ''}`}><a href='/'>Caribbean</a></p>
           <div className={`logo-div ${scrolled ? 'scrolled' : ''}`}><a href='/'><img src={logo} alt="Logo" className={`logoimg ${scrolled ? 'scrolled' : ''}`}/></a></div>
           <p className={`logo ${scrolled ? 'scrolled' : ''}`}><a href='/'>Dream</a></p>
@@ -33,7 +33,7 @@ export function Navbar(props) {
           <div className={`navbuttons${props.site === 'of' ? ' navbuttonsbold' : ''}`} style={{ width: 'auto' }}><a href='/oferta'>OFERTA</a></div>
           <div className={`navbuttons${props.site === 'zs' ? ' navbuttonsbold' : ''}`} style={{ width: 'auto' }}><a href='/zglos'>ZGŁOŚ SIĘ</a></div>
           <div className={`navbuttons${props.site === 'gl' ? ' navbuttonsbold' : ''}`} style={{ width: 'auto' }}><a href='/galeria'>GALERIA</a></div>
-          <div className={`navbuttons${props.site === 'kn' ? ' navbuttonsbold' : ''}`} style={{ width: 'auto' }}><a href='/kontakt'>KONTAKT</a></div>
+          <div className={`navbuttons${props.site === 'kn' ? ' navbuttonsbold' : ''}`} style={{ width: 'auto', marginRight: '10px' }}><a href='/kontakt'>KONTAKT</a></div>
         </div>
       </div>
     )
