@@ -123,10 +123,15 @@
   left: 0;
   top: 0%;
   background-color: transparent;
-  transition: opacity 0.4s ease-out;
-  opacity: 1;
+  animation: slideInLeft 0.8s forwards;
 }.bookmark.scrolled{
-  opacity: 0;
+  height: 300px;
+  width: 600px;
+  position: absolute;
+  left: 0;
+  top: 0%;
+  background-color: transparent;
+  animation: slideOutLeft 0.8s forwards;
 }
 
 .bookmark-start{
@@ -688,4 +693,52 @@
 
 .disappear.animated {
   animation: disappear 0.4s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+.slideInLeft {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slideInLeft.animated {
+  animation: slideInLeft 0.8s ease-out;
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes slideOutLeft {
+  from {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100px);
+  }
+}
+
+.slideOutLeft {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slideOutLeft.animated {
+  animation: slideOutLeft 0.5s ease-in;
+  opacity: 0;
+  visibility: hidden;
 }

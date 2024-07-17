@@ -104,7 +104,7 @@ function App() {
           <source src={video} type='video/mp4'/>
           Your browser does not support the video tag.
         </video>
-        <div className={`slideOutLeft ${scrolled ? 'animated' : 'slideInLeft animated'} bookmark`}>
+        <div className={`bookmark ${scrolled ? 'scrolled' : ''}`}>
           <div className='bookmark-start'></div>
           <div className='parallelogram'></div>
           <div className='bookmark-end'>
